@@ -1,12 +1,13 @@
 const http = new SimpleHTTP();
-// const employee = {
-//   firstName: 'Mathew',
-//   lastName: 'Appple',
-//   gender: 'Male',
-//   dateOfBirth: '1975-11-05',
-//   phoneNumber: '1-555-5555',
-//   email: 'test2@gmail.com'
-// };
+const employee = {
+  id: 8,
+  firstName: 'Jennifer',
+  lastName: 'White',
+  gender: 'Female',
+  dateOfBirth: '1993-08-06',
+  phoneNumber: '1-555-5555',
+  email: 'test2@gmail.com'
+};
 // Get all employees
 // http
 //   .get('http://localhost:5000/api/employee')
@@ -27,6 +28,6 @@ const http = new SimpleHTTP();
 
 // Update an employee record
 http
-  .put('http://localhost:5000/api/employee/update/8')
+  .put(`http://localhost:5000/api/employee/update/${employee.id}`, data)
   .then(data => console.log(data))
   .catch(error => console.log(error));
