@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  padding: 1.2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin: 2px;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 2rem;
+}
+ul {
+  list-style: none;
+  font-size: 1.7rem;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: blue;
+}
+a:link,
+a:visited:hover {
+  color: red;
+}
