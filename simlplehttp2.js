@@ -38,4 +38,6 @@ class SimpleHTTP {
         .catch(error => reject(error));
     });
   }
+  // HTTP DELETE request
+  delete(url) {}
 }
