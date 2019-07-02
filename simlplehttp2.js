@@ -1,4 +1,5 @@
 class SimpleHTTP {
+  // HTTP GET request
   get(url) {
     return new Promise((resolve, reject) => {
       fetch(url)
@@ -7,7 +8,7 @@ class SimpleHTTP {
         .catch(error => reject(error));
     });
   }
-
+  // HTTP POST request
   post(url, data) {
     return new Promise((resolve, reject) => {
       fetch(url, {
