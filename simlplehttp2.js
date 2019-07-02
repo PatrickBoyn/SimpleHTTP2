@@ -4,7 +4,7 @@ class SimpleHTTP {
       fetch(url)
         .then(response => response.json())
         .then(data => resolve(data))
-        .catch(error => error);
+        .catch(error => reject(error));
     });
   }
 }
