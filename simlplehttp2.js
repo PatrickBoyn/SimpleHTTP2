@@ -7,4 +7,6 @@ class SimpleHTTP {
         .catch(error => reject(error));
     });
   }
+
+  post(url, data) {}
 }
