@@ -34,5 +34,5 @@ const http = new SimpleHTTP();
 
 // Delete an employee record
 http
-  .delete('http://localhost:5000/api/employee/delete/7')
+  .delete('http://localhost:5000/api/employee/delete/12')
   .then(data => console.log(data).catch(error => console.log(error)));
