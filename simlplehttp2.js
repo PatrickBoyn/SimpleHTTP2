@@ -23,6 +23,7 @@ class SimpleHTTP {
         .catch(error => reject(error));
     });
   }
+  // HTTP PUT request
   put(url, data) {
     return new Promise((resolve, reject) => {
       fetch(url, {
@@ -32,7 +33,7 @@ class SimpleHTTP {
         },
         body: JSON.stringify(data)
       })
-        .then(response => response.json())
+        .then(resolve => resolve.json())
         .then(data => resolve(data))
         .catch(error => reject(error));
     });
