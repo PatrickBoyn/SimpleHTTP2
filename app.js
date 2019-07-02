@@ -1,12 +1,11 @@
 const http = new SimpleHTTP();
 const employee = {
-  id: 4,
-  firstName: 'John',
-  lastName: 'Doe',
+  firstName: 'Mathew',
+  lastName: 'Appple',
   gender: 'Male',
-  dateOfBirth: '1981-01-13',
+  dateOfBirth: '1975-11-05',
   phoneNumber: '1-555-5555',
-  email: 'test@gmail.com'
+  email: 'test2@gmail.com'
 };
 // Get all employees
 // http
