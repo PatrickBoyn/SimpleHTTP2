@@ -30,7 +30,7 @@ class SimpleHTTP {
         headers: {
           'Content-type': 'application/json'
         },
-        body: JSON.stringify(dat)
+        body: JSON.stringify(data)
       })
         .then(response => response.json())
         .then(data => resolve(data))
