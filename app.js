@@ -1,13 +1,13 @@
 const http = new SimpleHTTP();
-const employee = {
-  id: 8,
-  firstName: 'Jennifer',
-  lastName: 'White',
-  gender: 'Female',
-  dateOfBirth: '1993-08-06',
-  phoneNumber: '1-555-5555',
-  email: 'test2@gmail.com'
-};
+// const employee = {
+//   id: 6,
+//   firstName: 'Sarah',
+//   lastName: 'Michaels',
+//   gender: 'Female',
+//   dateOfBirth: '1988-05-25',
+//   phoneNumber: '1-555-5555',
+//   email: 'spacehappy@gmail.com'
+// };
 // Get all employees
 // http
 //   .get('http://localhost:5000/api/employee')
