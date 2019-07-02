@@ -28,6 +28,6 @@ const employee = {
 
 // Update an employee record
 http
-  .put(`http://localhost:5000/api/employee/update/${employee.id}`, data)
+  .put(`http://localhost:5000/api/employee/update/${employee.id}`, employee)
   .then(data => console.log(data))
   .catch(error => console.log(error));
