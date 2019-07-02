@@ -1,0 +1,3 @@
+class SimpleHTTP {
+  get(url) {}
+}
