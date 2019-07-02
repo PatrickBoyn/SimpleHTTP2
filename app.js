@@ -27,7 +27,12 @@ const http = new SimpleHTTP();
 //   .catch(error => console.log(error));
 
 // Update an employee record
+// http
+//   .put(`http://localhost:5000/api/employee/update/${employee.id}`, employee)
+//   .then(data => console.log(data))
+//   .catch(error => console.log(error));
+
+// Delete an employee record
 http
-  .put(`http://localhost:5000/api/employee/update/${employee.id}`, employee)
-  .then(data => console.log(data))
-  .catch(error => console.log(error));
+  .delete('http://localhost:5000/api/employee/delete/7')
+  .then(data => console.log(data).catch(error => console.log(error)));
