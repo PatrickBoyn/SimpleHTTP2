@@ -23,4 +23,7 @@ class SimpleHTTP {
         .catch(error => reject(error));
     });
   }
+  put(url, data) {
+    return new Promise((resolve, reject) => {});
+  }
 }
