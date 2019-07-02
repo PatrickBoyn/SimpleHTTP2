@@ -48,7 +48,7 @@ class SimpleHTTP {
         }
       })
         .then(response => response.json())
-        .then(data => resolve(data))
+        .then(data => resolve('Resouce deleted....'))
         .catch(error => reject(error));
     });
   }
