@@ -13,7 +13,7 @@ class SimpleHTTP {
       fetch(url, {
         method: 'POST',
         headers: {
-          'COntent-type': 'application/json'
+          'Content-type': 'application/json'
         },
         body: JSON.stringify(data)
       })
