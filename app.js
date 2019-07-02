@@ -1,0 +1,3 @@
+const http = new SimpleHTTP();
+
+http.get('http://localhost:5000/api/employee');
