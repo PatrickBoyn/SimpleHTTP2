@@ -8,5 +8,7 @@ class SimpleHTTP {
     });
   }
 
-  post(url, data) {}
+  post(url, data) {
+    return new Promise((resolve, reject) => {});
+  }
 }
