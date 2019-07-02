@@ -39,5 +39,17 @@ class SimpleHTTP {
     });
   }
   // HTTP DELETE request
-  delete(url) {}
+  delete(url) {
+    return new Promise((resolve, reject) => {
+      fetch(url, {
+        method: 'DELETE',
+        headers: {
+          'Content-type': 'application/json'
+        }
+      })
+        .then(response => response.json())
+        .then(data => resolve(data))
+        .catch(error => reject(error));
+    });
+  }
 }
