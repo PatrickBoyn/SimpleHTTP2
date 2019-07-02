@@ -20,7 +20,13 @@ const http = new SimpleHTTP();
 //   .catch(error => console.log(error));
 
 // Post an employee record
+// http
+//   .post('http://localhost:5000/api/employee/new', employee)
+//   .then(data => console.log(data))
+//   .catch(error => console.log(error));
+
+// Update an employee record
 http
-  .post('http://localhost:5000/api/employee/new', employee)
+  .put('http://localhost:5000/api/employee/update/8')
   .then(data => console.log(data))
   .catch(error => console.log(error));
