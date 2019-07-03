@@ -33,6 +33,6 @@ const http = new SimpleHTTP();
 //   .catch(error => console.log(error));
 
 // Delete an employee record
-http
-  .delete('http://localhost:5000/api/employee/delete/12')
-  .then(data => console.log(data).catch(error => console.log(error)));
+// http
+//   .delete('http://localhost:5000/api/employee/delete/12')
+//   .then(data => console.log(data).catch(error => console.log(error)));
