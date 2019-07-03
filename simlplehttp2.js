@@ -21,19 +21,18 @@ class SimpleHTTP {
     return responseData;
   }
   // HTTP PUT request
-  put(url, data) {
-    return new Promise((resolve, reject) => {
-      fetch(url, {
-        method: 'PUT',
-        headers: {
-          'Content-type': 'application/json'
-        },
-        body: JSON.stringify(data)
-      })
-        .then(resolve => resolve.json())
-        .then(data => resolve(data))
-        .catch(error => reject(error));
+  async put(url, data) {
+    const response = await fetch(url, {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(data)
     });
+
+    const responseData = await response.json();
+
+    return responseData;
   }
   // HTTP DELETE request
   delete(url) {
