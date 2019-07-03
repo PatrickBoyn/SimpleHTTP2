@@ -8,6 +8,7 @@ const http = new SimpleHTTP();
 //   phoneNumber: '1-555-5555',
 //   email: 'spacehappy@gmail.com'
 // };
+// This is a test file to see if the various operations work.
 // Get all employees
 http
   .get('http://localhost:5000/api/employee')
