@@ -1,19 +1,19 @@
 const http = new SimpleHTTP();
-// const employee = {
-//   id: 6,
-//   firstName: 'Sarah',
-//   lastName: 'Michaels',
-//   gender: 'Female',
-//   dateOfBirth: '1988-05-25',
-//   phoneNumber: '1-555-5555',
-//   email: 'spacehappy@gmail.com'
-// };
+const employee = {
+  id: 13,
+  firstName: 'George',
+  lastName: 'Cypher',
+  gender: 'Male',
+  dateOfBirth: '1987-01-01',
+  phoneNumber: '1-555-5555',
+  email: 'funtimes@gmail.com'
+};
 // This is a test file to see if the various operations work.
 // Get all employees
-http
-  .get('http://localhost:5000/api/employee')
-  .then(data => console.log(data))
-  .catch(error => console.log(error));
+// http
+//   .get('http://localhost:5000/api/employee')
+//   .then(data => console.log(data))
+//   .catch(error => console.log(error));
 
 // Get single employee
 // http
