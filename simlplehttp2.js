@@ -35,17 +35,15 @@ class SimpleHTTP {
     return responseData;
   }
   // HTTP DELETE request
-  delete(url) {
-    return new Promise((resolve, reject) => {
-      fetch(url, {
-        method: 'DELETE',
-        headers: {
-          'Content-type': 'application/json'
-        }
-      })
-        .then(response => response.json())
-        .then(data => resolve('Resouce deleted....'))
-        .catch(error => reject(error));
+  async delete(url) {
+    const response = await fetch(url, {
+      method: 'DELETE',
+      headers: {
+        'Content-type': 'application/json'
+      }
     });
+
+    const responseData = await 'Resource Deleted...';
+    return responseData;
   }
 }
