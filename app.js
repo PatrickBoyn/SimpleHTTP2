@@ -1,13 +1,13 @@
 const http = new SimpleHTTP();
-const employee = {
-  id: 13,
-  firstName: 'George',
-  lastName: 'Cypher',
-  gender: 'Male',
-  dateOfBirth: '1987-01-01',
-  phoneNumber: '1-555-5555',
-  email: 'funtimes@gmail.com'
-};
+// const employee = {
+//   id: 9,
+//   firstName: 'Allan',
+//   lastName: 'Williamson',
+//   gender: 'Male',
+//   dateOfBirth: '1994-03-18',
+//   phoneNumber: '1-555-5555',
+//   email: 'morestuff@gmail.com'
+// };
 // This is a test file to see if the various operations work.
 // Get all employees
 // http
