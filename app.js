@@ -9,10 +9,10 @@ const http = new SimpleHTTP();
 //   email: 'spacehappy@gmail.com'
 // };
 // Get all employees
-// http
-//   .get('http://localhost:5000/api/employee')
-//   .then(data => console.log(data))
-//   .catch(error => console.log(error));
+http
+  .get('http://localhost:5000/api/employee')
+  .then(data => console.log(data))
+  .catch(error => console.log(error));
 
 // Get single employee
 // http
