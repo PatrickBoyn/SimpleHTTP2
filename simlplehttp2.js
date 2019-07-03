@@ -7,19 +7,18 @@ class SimpleHTTP {
     return responseData;
   }
   // HTTP POST request
-  post(url, data) {
-    return new Promise((resolve, reject) => {
-      fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-type': 'application/json'
-        },
-        body: JSON.stringify(data)
-      })
-        .then(response => response.json())
-        .then(data => resolve(data))
-        .catch(error => reject(error));
+  async post(url, data) {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(data)
     });
+
+    const responseData = await response.json();
+
+    return responseData;
   }
   // HTTP PUT request
   put(url, data) {
